@@ -5,3 +5,4 @@ metadata:
 spec:
   failsafeInboundHostPorts: {{ .Values.calico.failsafeInboundHostPorts }}
   bpfLogLevel: Info
+  wireguardEnabled: {{ .Values.calico.encryptPodsTraffic }}

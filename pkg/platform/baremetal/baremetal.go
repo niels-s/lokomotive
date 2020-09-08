@@ -54,6 +54,7 @@ type config struct {
 	Labels                   map[string]string `hcl:"labels,optional"`
 	OIDC                     *oidc.Config      `hcl:"oidc,block"`
 	EnableTLSBootstrap       bool              `hcl:"enable_tls_bootstrap,optional"`
+	EncryptPodTraffic        bool              `hcl:"encrypt_pod_traffic,optional"`
 	KubeAPIServerExtraFlags  []string
 }
 
